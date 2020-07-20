@@ -1,5 +1,6 @@
 nb-configuration.xml
 
+packaged.yaml
 # Visual Studio Code
 .vscode
 .factorypath
