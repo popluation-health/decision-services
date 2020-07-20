@@ -6,7 +6,6 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import org.kie.api.runtime.KieSession;
 import org.kie.kogito.rules.KieRuntimeBuilder;
 import org.pophealth.data.HealthData;
 import org.pophealth.rewards.HealthDataService;
@@ -26,12 +25,13 @@ public class HealthDataResource {
     @POST
     public HealthData processHealthData(HealthData data) {
 
-        KieSession session = builder.newKieSession();
-        session.insert(data);
-        session.fireAllRules();
+        //THIS HITS RULES
+//        KieSession session = builder.newKieSession();
+//        session.insert(data);
+//        session.fireAllRules();
 
-//        healthService.processAlerts(data);
-//        healthService.processRewards(data);
+        //THIS DOESN'T
+        healthService.processRewards(data);
 
         return data;
 
