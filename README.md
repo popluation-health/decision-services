@@ -13,9 +13,8 @@ However, injecting the `KieRuntimeBuilder` and executing manually works.
 See `HealthDataResource.java` for API
 See: `HealthDataService.java` for RuleUnit injection
 
-
-https://github.com/popluation-health/decision-services/blob/quarkus-repro/src/main/java/org/pophealth/rewards/HealthDataService.java
-
 ## Try it out
 1. `mvn clean compile quarkus:dev`
 2. `curl -X POST "http://localhost:8080/healthRules" -H "accept: application/json" -H "Content-Type: application/json" -d "{\"steps\":18000}"`
+
+Should hit rules
