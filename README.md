@@ -10,7 +10,11 @@ However, injecting the `KieRuntimeBuilder` and executing manually works.
         session.fireAllRules();
 ```
 
-See `HealthDataResource.java`
+See `HealthDataResource.java` for API
+See: `HealthDataService.java` for RuleUnit injection
+
+
+https://github.com/popluation-health/decision-services/blob/quarkus-repro/src/main/java/org/pophealth/rewards/HealthDataService.java
 
 ## Try it out
 1. `mvn clean compile quarkus:dev`
