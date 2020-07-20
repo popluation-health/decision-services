@@ -14,6 +14,7 @@ public class ExcelToDrl {
 // assign the excel to the input stream
 // mention the local directory path where your excel is kept
 // you can take any decision table (excel sheet) for testing
+
             is= new FileInputStream("/projects/quarkus/population-health/decision-services/src/main/resources/org/pophealth/rewards/Rewards.xls");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
