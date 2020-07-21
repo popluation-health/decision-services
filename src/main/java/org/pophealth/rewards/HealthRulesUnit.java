@@ -6,7 +6,7 @@ import org.kie.kogito.rules.RuleUnitData;
 import org.pophealth.data.HealthData;
 
 
-public class RewardsHealthDataUnit implements RuleUnitData {
+public class HealthRulesUnit implements RuleUnitData {
 
     private DataStore<HealthData> healthData = DataSource.createStore();
 

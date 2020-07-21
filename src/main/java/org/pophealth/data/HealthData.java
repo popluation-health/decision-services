@@ -9,11 +9,20 @@ public class HealthData {
 
     private Integer steps;
     private Integer activeMinutes;
-    private List<String> rewards = new ArrayList<>();
+    private Integer age;
+    private Double sleepRpms;
+    private Double sleepHours;
+    private Double sleepAvgRpms;
+    private Double heartRateBpm;
 
-    public void addRewardName(String name) {
-        rewards.add(name);
-        System.out.println("Added reward "+name);
+    private List<Reward> rewards = new ArrayList<>();
+    private List<Alert> alerts = new ArrayList<>();
+
+    public void addReward(Reward reward) {
+        rewards.add(reward);
     }
 
+    public void addAlert(Alert alert){
+        alerts.add(alert);
+    }
 }

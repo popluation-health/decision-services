@@ -16,6 +16,9 @@ public class ExcelToDrl {
 // you can take any decision table (excel sheet) for testing
 
             is= new FileInputStream("/projects/quarkus/population-health/decision-services/src/main/resources/org/pophealth/rewards/Rewards.xls");
+
+//            is= new FileInputStream("/projects/quarkus/population-health/decision-services/src/main/resources/org.pophealth.alert/Alerts.xls");
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
