@@ -15,7 +15,7 @@ public class ExcelToDrl {
 // mention the local directory path where your excel is kept
 // you can take any decision table (excel sheet) for testing
 
-            is= new FileInputStream("/projects/quarkus/population-health/decision-services/src/main/resources/org/pophealth/rewards/Rewards.xls");
+            is= new FileInputStream("/projects/quarkus/population-health/decision-services/src/main/resources/org/pophealth/rewards/PopHealthRules.xls");
 
 //            is= new FileInputStream("/projects/quarkus/population-health/decision-services/src/main/resources/org.pophealth.alert/Alerts.xls");
 
