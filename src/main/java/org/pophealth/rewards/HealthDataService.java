@@ -13,7 +13,7 @@ public class HealthDataService {
     @Inject
     KieRuntimeBuilder builder;
 
-    public List<HealthData> processRewards(List<HealthData> data) {
+    public List<HealthData> processRules(List<HealthData> data) {
 
         KieSession session = builder.newKieSession();
         data.forEach(val -> session.insert(val));
