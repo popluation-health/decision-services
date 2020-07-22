@@ -1,5 +1,6 @@
-package org.pophealth.data;
+package org.pophealth.model;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Data;
@@ -14,6 +15,7 @@ public class HealthData {
     private Double sleepHours;
     private Double sleepAvgRpms;
     private Double heartRateBpm;
+    private LocalDate measurementDate;
 
     private List<Reward> rewards = new ArrayList<>();
     private List<Alert> alerts = new ArrayList<>();

@@ -1,4 +1,4 @@
-package org.pophealth.data;
+package org.pophealth.model;
 
 import lombok.Data;
 
