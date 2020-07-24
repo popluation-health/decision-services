@@ -88,7 +88,8 @@
                 <artifactId>quarkus-maven-plugin</artifactId>
                 <version>${quarkus.version}</version>
                 <configuration>
-                    <uberJar>true</uberJar>
+                    <additionalBuildArgs>--allow-incomplete-classpath</additionalBuildArgs>
+                    <uberJar>false</uberJar>
                 </configuration>
                 <executions>
                     <execution>
